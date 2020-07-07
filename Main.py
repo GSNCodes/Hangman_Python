@@ -133,11 +133,11 @@ def game_play(hangman_image, guessed, run):
 		guessed = []
 		for letter in letters:
 			letter[3] = True
-		temp()
+		game()
 
 ## Game Loop
 
-def temp():
+def game():
 	window.fill(WHITE)
 	play_again = "Do you want to play again?"
 	text = WORD_FONT.render(play_again, 1, BLACK)
@@ -181,8 +181,9 @@ def temp():
 			
 
 
+if __name__ == '__main__':
 
-game_play(hangman_image, guessed, run)
+	game_play(hangman_image, guessed, run)
 
 
-pygame.quit()
+	pygame.quit()
