@@ -10,10 +10,10 @@ After which, the program can be run using the command `python Main.py`
 
 ## Sample Gameplay
 
-<img src ='output_images/Output_1.png' width = 400>  <img src ='output_images/Output_2.png' width = 400> 
+<img src ='output_images/Output_1.png' width = 350>  <img src ='output_images/Output_2.png' width = 350> 
 
-<img src ='output_images/Output_3.png' width = 400>  <img src ='output_images/Output_5.png' width = 400>  
+<img src ='output_images/Output_3.png' width = 350>  <img src ='output_images/Output_5.png' width = 350> 
 
-<p align="center">
-  <img src ='output_images/Output_4.png' width = 400> 
-</p>
+<img src ='output_images/Output_4.png' width = 350>  <img src ='output_images/Output_6.png' width = 350> 
+
+
