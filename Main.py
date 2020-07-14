@@ -8,7 +8,7 @@ pygame.init()
 WIDTH, HEIGHT = 800, 500
 run = True
 FPS = 60
-WHITE = (255,255,255)
+BG_COLOR = (230,96,210)
 BLACK = (0,0,0)
 
 
@@ -48,7 +48,7 @@ for i in range(26):
 
 
 def draw(hangman_image, guessed, word):
-	window.fill(WHITE)
+	window.fill(BG_COLOR)
 
 	## Draw Title
 	title = TITLE_FONT.render("Hangman !", 1, BLACK)
@@ -80,7 +80,7 @@ def draw(hangman_image, guessed, word):
 
 def end_message(msg):
 	pygame.time.delay(1000)
-	window.fill(WHITE)
+	window.fill(BG_COLOR)
 	text = WORD_FONT.render(msg, 1, BLACK)
 	window.blit(text, (WIDTH/2 - text.get_width()/2, HEIGHT/2 - text.get_height()/2))
 	pygame.display.update()
@@ -88,7 +88,7 @@ def end_message(msg):
 
 
 def game_play(hangman_image, guessed, run):
-	words = ['DEVELOPER', 'POTATO', 'GSN', 'PYTHON']
+	words = ['DEVELOPER', 'IDE', 'PYTHON', 'COFFEE']
 	word = random.choice(words)
 	close_window = False
 	while run:
@@ -138,7 +138,7 @@ def game_play(hangman_image, guessed, run):
 ## Game Loop
 
 def game():
-	window.fill(WHITE)
+	window.fill(BG_COLOR)
 	play_again = "Do you want to play again?"
 	text = WORD_FONT.render(play_again, 1, BLACK)
 	window.blit(text, (WIDTH/2 - text.get_width()/2, HEIGHT/2 - text.get_height()/2))
